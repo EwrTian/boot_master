@@ -1,0 +1,39 @@
+2018-11-21 17:44:04,476 [main] INFO  [com.jeesite.modules.Application] StartupInfoLogger.java:50 - Starting Application on DESKTOP-QP0FDUA with PID 7864 (D:\software\MyEclipse2017\Workspaces\boot_master\src\main\webapp\WEB-INF\classes started by tian in D:\software\MyEclipse2017\Workspaces\boot_master)
+2018-11-21 17:44:04,483 [main] DEBUG [com.jeesite.modules.Application] StartupInfoLogger.java:53 - Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-11-21 17:44:04,484 [main] INFO  [com.jeesite.modules.Application] SpringApplication.java:684 - The following profiles are active: default
+2018-11-21 17:44:09,315 [main] INFO  [com.jeesite.common.config.Global] jt:157 - Config files: [classpath:config/jeesite-core.yml, classpath:config/application.yml]
+2018-11-21 17:44:09,321 [main] INFO  [com.jeesite.common.config.Global] jt:216 - Spring cache cluster mode: false, session manager name: J1CacheSession
+2018-11-21 17:44:11,670 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:91 - Tomcat initialized with port(s): 8888 (http)
+2018-11-21 17:44:12,616 [main] DEBUG [com.jeesite.common.config.Global] nw:219 - Update D:\software\MyEclipse2017\Workspaces\boot_master\src\main\webapp\WEB-INF\classes\config\application.yml jdbc.password encryption success.
+2018-11-21 17:44:13,153 [main] INFO  [com.jeesite.common.config.Global] fz:141 - Log path: D:/software/MyEclipse2017/Workspaces/boot_master/src/main/webapp/WEB-INF/classes
+
+   _____        ___  _   _           ___
+  |_   _|      / __'(_)_| |_        /   |
+  _ | | __  __ \___ | |_   _| __   / /| |
+ ( .| |/__\/__\ ___)| | | |_ /__\ / /_| |_
+  \___|\__.\__.|____|_| \___)\__.(____   _|  :: JeeSite V4.1.0 :: 
+======================================|_|==========================
+
+    欢迎使用 boot_master V4.1
+
+    您当前的版本为社区版，官方网站：http://jeesite.com
+
+    机器码是：db6343f8becacc385ebb15dff9c00cfb
+    产品名称：boot_master
+    公司名称：TW
+
+===================================================================
+
+2018-11-21 17:44:17,566 [main] DEBUG [c.j.c.mybatis.mapper.provider.SelectSqlProvider] et:193 - 1毫秒: SELECT a.status AS "status", a.create_by AS "createBy", a.create_date AS "createDate", a.update_by AS "updateBy", a.update_date AS "updateDate", a.remarks AS "remarks", a.module_code AS "moduleCode", a.module_name AS "moduleName", a.description AS "description", a.main_class_name AS "mainClassName", a.current_version AS "currentVersion", a.upgrade_info AS "upgradeInfo" FROM js_sys_module a WHERE a.status = #{sqlMap.where#status#EQ1} ORDER BY a.update_date DESC
+2018-11-21 17:44:17,602 [main] DEBUG [o.m.spring.transaction.SpringManagedTransaction] SpringManagedTransaction.java:87 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5beb6be2] will not be managed by Spring
+2018-11-21 17:44:17,645 [main] DEBUG [com.jeesite.modules.sys.dao.ModuleDao.findList] BaseJdbcLogger.java:159 - ==>  Preparing: SELECT a.status AS "status", a.create_by AS "createBy", a.create_date AS "createDate", a.update_by AS "updateBy", a.update_date AS "updateDate", a.remarks AS "remarks", a.module_code AS "moduleCode", a.module_name AS "moduleName", a.description AS "description", a.main_class_name AS "mainClassName", a.current_version AS "currentVersion", a.upgrade_info AS "upgradeInfo" FROM js_sys_module a WHERE a.status = ? ORDER BY a.update_date DESC 
+2018-11-21 17:44:17,743 [main] DEBUG [com.jeesite.modules.sys.dao.ModuleDao.findList] BaseJdbcLogger.java:159 - ==> Parameters: 0(String)
+2018-11-21 17:44:17,818 [main] DEBUG [com.jeesite.modules.sys.dao.ModuleDao.findList] BaseJdbcLogger.java:159 - <==      Total: 0
+2018-11-21 17:44:21,513 [main] DEBUG [com.jeesite.common.beetl.BeetlUtils] rx:98 - Beetl config files: [classpath:/config/beetl-core.properties, classpath:/config/beetl.properties]
+2018-11-21 17:44:25,988 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:206 - Tomcat started on port(s): 8888 (http) with context path '/js'
+2018-11-21 17:44:25,996 [main] INFO  [com.jeesite.modules.Application] StartupInfoLogger.java:59 - Started Application in 22.797 seconds (JVM running for 23.632)
+2018-11-21 17:44:53,614 [http-nio-8888-exec-3] DEBUG [c.j.c.mybatis.mapper.provider.SelectSqlProvider] et:193 - 3毫秒: SELECT a.id AS "id", a.config_name AS "configName", a.config_key AS "configKey", a.config_value AS "configValue", a.is_sys AS "isSys", a.create_by AS "createBy", a.create_date AS "createDate", a.update_by AS "updateBy", a.update_date AS "updateDate", a.remarks AS "remarks" FROM js_sys_config a ORDER BY a.config_key
+2018-11-21 17:44:53,617 [http-nio-8888-exec-3] DEBUG [o.m.spring.transaction.SpringManagedTransaction] SpringManagedTransaction.java:87 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5beb6be2] will not be managed by Spring
+2018-11-21 17:44:53,618 [http-nio-8888-exec-3] DEBUG [com.jeesite.modules.sys.dao.ConfigDao.findList] BaseJdbcLogger.java:159 - ==>  Preparing: SELECT a.id AS "id", a.config_name AS "configName", a.config_key AS "configKey", a.config_value AS "configValue", a.is_sys AS "isSys", a.create_by AS "createBy", a.create_date AS "createDate", a.update_by AS "updateBy", a.update_date AS "updateDate", a.remarks AS "remarks" FROM js_sys_config a ORDER BY a.config_key 
+2018-11-21 17:44:53,620 [http-nio-8888-exec-3] DEBUG [com.jeesite.modules.sys.dao.ConfigDao.findList] BaseJdbcLogger.java:159 - ==> Parameters: 
+2018-11-21 17:44:53,637 [http-nio-8888-exec-3] DEBUG [com.jeesite.modules.sys.dao.ConfigDao.findList] BaseJdbcLogger.java:159 - <==      Total: 0
